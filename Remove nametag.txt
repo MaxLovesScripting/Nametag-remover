@@ -1,0 +1,9 @@
+getgenv().removenametag = state
+        if getgenv().removenametag == false then
+            game.Players.LocalPlayer.Character.Head.Nametag.Enabled = true
+        end
+        while getgenv().removenametag do
+            game.Players.LocalPlayer.Character.Head.Nametag.Enabled = false
+        task.wait(0.3)
+        end
+    end)
